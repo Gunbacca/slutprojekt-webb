@@ -1,0 +1,27 @@
+
+.grid-container{
+    min-height: 100vh;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  1fr  1fr  1fr;
+
+    grid-template-areas: 
+    "navbar navbar navbar"
+    "main main main"
+    "footer footer footer";
+}
+
+nav{
+    grid-area: navbar;
+    background-color: #005CBF;
+}
+main{
+    grid-area: main;
+    background-color: #FFD700;
+}
+footer{
+    grid-area: footer;
+    background: rgb(0,92,191);
+    background: linear-gradient(0deg, rgba(0,92,191,1) 0%, rgba(255,215,0,1) 100%);
+}
