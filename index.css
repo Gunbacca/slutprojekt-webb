@@ -3,12 +3,12 @@
     min-height: 100vh;
     display: grid;
 
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:  1fr  1fr  1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows:  1fr 1fr 1fr  ;
 
     grid-template-areas: 
     "navbar navbar navbar"
-    "main main main"
+    "main main aside"
     "footer footer footer";
 }
 
@@ -20,8 +20,22 @@ main{
     grid-area: main;
     background-color: #FFD700;
 }
+aside{
+ grid-area: aside;
+ background-color: aqua;
+}
 footer{
     grid-area: footer;
-    background: rgb(0,92,191);
-    background: linear-gradient(0deg, rgba(0,92,191,1) 0%, rgba(255,215,0,1) 100%);
+    background-color: #db1010;
+}
+#info{
+    display: none;
+}
+.menu{
+    color: aliceblue;
+    font-size: 50px;
+}
+#info{
+    color: aliceblue;
+    font-size: larger;
 }
