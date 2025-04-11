@@ -11,16 +11,26 @@
 </head>
 <body>
     <div class="grid-container">
+    <header>
+        <div class="menu" ><i onclick="Menu()" class='bx bx-menu'></i><button class="dark-mode" onclick="toggle()"> <img src="moon-solid-24.png" alt=""> </button></div>
+        <div id="info">
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sida 2.html">Produkter</a></li>
+                <li><a href="sida 3.html">Formulär</a></li>
+                <li><a href="sida 4.html">Spel</a></li>
+            </ol>
+        </div>
+       <script>
+         function toggle(){
+            let html =document.getElementsByTagName("html")
+            html[0].classList.toggle("theme-light")
+            html[0].classList.toggle("theme-dark")
+        }
+       </script>
+    </header>
         <nav>
-            <div class="menu" onclick="Menu()"><i class='bx bx-menu'></i></div>
-            <div id="info">
-                <ol>
-                    <li>home</li>
-                    <li>produkter</li>
-                    <li>spel</li>
-                    <li>formulär</li>
-                </ol>
-            </div>
+            <p>Make Sweden </p>
         </nav>
         <main></main>
         <aside></aside>

@@ -3,18 +3,26 @@
     min-height: 100vh;
     display: grid;
 
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows:  1fr 1fr 1fr  ;
+    grid-template-columns: 1fr 1fr 1fr  ;
+    grid-template-rows:  0.4fr 0.3fr 3fr 0.5fr ;
 
     grid-template-areas: 
-    "navbar navbar navbar"
+    "header header header "
+    "navbar navbar navbar "
     "main main aside"
     "footer footer footer";
 }
-
+header{
+    grid-area: header;
+    background-image: url(sweden-flag\ \(1\).jpg);
+    background-size: 100% 100%;
+    
+}
 nav{
     grid-area: navbar;
-    background-color: #005CBF;
+    background-color: #db1010;
+    
+    
 }
 main{
     grid-area: main;
@@ -38,4 +46,11 @@ footer{
 #info{
     color: aliceblue;
     font-size: larger;
+}
+.dark-mode{
+    margin-left: 250px;
+}
+a{
+    color: aliceblue;
+
 }
