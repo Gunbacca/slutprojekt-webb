@@ -14,6 +14,14 @@
 }
 body{
     margin: 0;
+    background-color :var(--bg);
+    color: var(--text);
+}
+.theme-dark, .theme-light *{
+    color: #ffffff !important;
+}
+.theme-light, .theme-dark *{
+    color: rgb(0, 0, 0) !important;
 }
 header{
     grid-area: header;
@@ -21,7 +29,16 @@ header{
     background-size: 100% 100%;
     
 }
+header li{
+    list-style-type: none;
+   padding: 7px;
+   float: left;
+}
 
+header a{ 
+    text-decoration: none;
+  
+}
 main{
     grid-area: main;
     background-color: #FFD700;
@@ -52,7 +69,7 @@ footer{
     font-size: larger;
 }
 .dark-mode{
-    margin-left: 315px;
+    margin-left: 308px;
 }
 a{
     color: aliceblue;

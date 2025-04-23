@@ -1,25 +1,92 @@
+
 .grid-container{
     min-height: 100vh;
     display: grid;
 
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows:  1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr  ;
+    grid-template-rows:  0.4fr 3fr 1fr 0.5fr ;
 
     grid-template-areas: 
-    "navbar navbar navbar"
+    "header header header "
     "main main main"
+    " aside aside aside"
     "footer footer footer";
 }
+body{
+    margin: 0;
+}
+header{
+    grid-area: header;
+    background-image: url(sweden-flag\ \(1\).jpg);
+    background-size: 100% 100%;
+    
+}
+header li{
+    list-style-type: none;
+   
+}
 
-nav{
-    grid-area: navbar;
-    background-color: #005CBF;
+header a{ 
+    text-decoration: none;
+    
 }
 main{
     grid-area: main;
     background-color: #FFD700;
 }
+aside{
+ grid-area: aside;
+ background-color: #ffffff;
+ background-image: url(jimmie_aakesson_2018_1000x562.jpg);
+ background-size: 100% 100%;
+}
 footer{
     grid-area: footer;
-    background-color: #ffffff;
+    background-color: #db1010;
+    background: #0000FF;
+    background: linear-gradient(0deg, rgba(0, 0, 255, 1) 0%, rgba(255, 255, 0, 1) 100%);
+}
+#info{
+    display: none;
+}
+.menu{
+    color: aliceblue;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+}
+#info{
+    color: aliceblue;
+    font-size: larger;
+}
+.dark-mode{
+    margin-left: 308px;
+}
+a{
+    color: aliceblue;
+}
+h2{
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 40px;
+}
+
+.menu i {
+    font-size: 40px;
+    line-height: 1;
+}
+
+.menu button {
+    background: none;
+    border: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu button img {
+    height: 32px;
+    width: 32px;
+    display: block;
 }
