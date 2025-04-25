@@ -21,7 +21,7 @@ body{
     color: #ffffff !important;
 }
 .theme-light, .theme-dark *{
-    color: rgb(0, 0, 0) !important;
+    color: #000000 !important;
 }
 header{
     grid-area: header;
@@ -33,6 +33,11 @@ header li{
     list-style-type: none;
    padding: 7px;
    float: left;
+   margin-top: 20px;
+}
+header h2{
+    float: left;
+    margin-left: 55px;
 }
 
 header a{ 
@@ -42,6 +47,7 @@ header a{
 main{
     grid-area: main;
     background-color: #FFD700;
+    
 }
 aside{
  grid-area: aside;
@@ -54,7 +60,15 @@ footer{
     background-color: #db1010;
     background: #0000FF;
     background: linear-gradient(0deg, rgba(0, 0, 255, 1) 0%, rgba(255, 255, 0, 1) 100%);
+    text-align: center;
+    
 }
+footer img{
+    height: 30px;
+    float: left;
+   
+}
+
 #info{
     display: none;
 }
@@ -98,4 +112,11 @@ h2{
     height: 32px;
     width: 32px;
     display: block;
+}
+main img{
+    height: 80px;
+    
+}
+#kontakta{
+    margin-right: 45px;
 }
