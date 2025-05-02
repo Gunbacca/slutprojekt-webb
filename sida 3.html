@@ -1,12 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="theme-light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="sida 3.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
 </head>
 <body>
-    formulär
+    <div class="grid-container">
+    <header>
+
+        <div class="menu" ><i onclick="Menu()" class='bx bx-menu'></i>
+            <button class="dark-mode" onclick="toggle()"> <img src="moon-solid-24.png" alt=""></button>
+        </div>
+        <div id="info">
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sida 2.html">Produkter</a></li>
+                <li><a href="sida 3.html">Formulär</a></li>
+                <li><a href="sida 4.html">Spel</a></li>
+            </ol>
+        </div>
+        <h2>make Sweden great agian</h2>
+       <script>
+         function toggle(){
+            let html =document.getElementsByTagName("html")
+            html[0].classList.toggle("theme-light")
+            html[0].classList.toggle("theme-dark")
+        }
+       </script>
+    </header>
+    <main> 
+        
+    </main>
+        <aside></aside>
+        <footer>
+
+
+    <div id="myModal" class="modal">
+
+   
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="tenor.gif" alt="">
+    </div>
+
+    </div>
+           <a id="flagga"><img src="R.gif" alt="" ></a> 
+            
+            <h4 id="kontakta">Kontakta oss</h4>
+            <p>Telefonnummer: 0760383578 <br>Gmail: Makeswedengreat@gmail.com Adress: Solvägen 3 </p>
+        </footer>
+
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
