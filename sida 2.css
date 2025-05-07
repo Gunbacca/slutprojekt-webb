@@ -184,8 +184,11 @@ main img{
 .Shop-container div{
     background-color: white;
     border-radius: 5px;
+    width: 160px;
+    border: #000000 solid 6px;
 }
 .text{
     text-align: center;
     color: black;
+    padding: 1px;
 }
