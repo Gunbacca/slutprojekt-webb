@@ -48,11 +48,13 @@ main{
     grid-area: main;
     background-color: #FFD700;
     padding: 5px;
+    
 }
 aside{
  grid-area: aside;
  background-color: #FFD700;
  background-size: 100% 100%;
+ background-image: url(jimmie_aakesson_2018_1000x562.jpg);
 }
 footer{
     grid-area: footer;
@@ -187,4 +189,51 @@ main img{
 .text{
     text-align: center;
     color: black;
+}
+
+
+.game{
+    height: 200px;
+    width: 375px;
+    border: black solid 2px;
+}
+#spelare{
+    height: 50px;
+    width: 20px;
+    top: 150px;
+    position: relative;
+    background-color: red;
+}
+.animate{
+    animation: jump 500ms;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+    
+    
+}
+#magdalena{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: relative;
+    top: 130px;
+    left:255px;
+    animation: magdalena 1s infinite;
+}
+@keyframes magdalena{
+    0%{left: 355px;}
+    100%{left: -40px;}
+}
+
+#img-jimmy{
+    height: 50px;
+    width: 20px;
+}
+#magda{
+    height: 20px;
+    width: 20px;
 }

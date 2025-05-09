@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="theme-light">
+<html class="theme-light" onclick="jump()">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,11 +33,41 @@
        </script>
     </header>
         <main>
+            <h2>Akta dig från sossarna</h2>
             <div class="game">
-                <div id="spelare"></div>
-                <div id="Magdalena"></div>
-            </div>
+                <div id="spelare" ><img src="sdltb870032-nh-890x592.jpg" alt="" id="img-jimmy"></div>
+                <div id="magdalena"><img src="ladda ned.jpg" alt="" id="magda"></div>
+              </div>
+              <script>
+                var spelare = document.getElementById("spelare")
+                var magdalena = document.getElementById("magdalena")
+                let jumps = 0
+                function jump(){
+                    jumps++
+                  if(spelare.classList != "animate"){
+                    spelare.classList.add("animate");
+                  }
+                    setTimeout(function(){
+                      spelare.classList.remove("animate")
+                    },500);
+                    }
             
+                    var checkDead = setInterval(function(){
+                      var spelaretop =
+                      parseInt(window.getComputedStyle(spelare).
+                    getPropertyValue("top"));
+                    var magdalenaleft =
+                      parseInt(window.getComputedStyle(magdalena).
+                    getPropertyValue("left"));
+                      if(magdalenaleft<20 && magdalenaleft>0 && spelaretop>=130){
+                        magdalena.style.animation = "none"
+                        magdalena.style.display = "none"
+                        alert("sossejävlarna vann" +" "+ "poäng:" + jumps)
+                        jumps = 0
+                      }
+                },10);
+                
+             </script>
         </main>
         <aside></aside>
         <footer>

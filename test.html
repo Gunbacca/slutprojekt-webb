@@ -15,11 +15,28 @@
     var spelare = document.getElementById("spelare")
     var magdalena = document.getElementById("magdalena")
     function jump(){
-        spelare.classList.add("animate")
+      if(spelare.classList != "animate"){
+        spelare.classList.add("animate");
+      }
         setTimeout(function(){
           spelare.classList.remove("animate")
         },500);
-    }
-  </script>
+        }
+
+        var checkDead = setInterval(function(){
+          var spelaretop =
+          parseInt(window.getComputedStyle(spelare).
+        getPropertyValue("top"));
+        var magdalenaleft =
+          parseInt(window.getComputedStyle(magdalena).
+        getPropertyValue("left"));
+          if(magdalenaleft<20 && magdalenaleft>0 && spelaretop>=130){
+            magdalena.style.animation = "none"
+            magdalena.style.display = "none"
+            alert("sossejävlarna vann")
+          }
+    },10);
+    
+ </script>
 </body>
 </html>
