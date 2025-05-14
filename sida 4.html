@@ -1,94 +1,101 @@
 <!DOCTYPE html>
 <html class="theme-light" onclick="jump()">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="sida 4.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="sida 4.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
+
 <body>
-    <div class="grid-container">
+  <div class="grid-container">
     <header>
 
-        <div class="menu" ><i onclick="Menu()" class='bx bx-menu'></i>
-            <button class="dark-mode" onclick="toggle()"> <img src="moon-solid-24.png" alt=""></button>
-        </div>
-        <div id="info">
-            <ol>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sida 2.html">Produkter</a></li>
-                <li><a href="sida 3.html">Formulär</a></li>
-                <li><a href="sida 4.html">Spel</a></li>
-            </ol>
-        </div>
-        <h2>make Sweden great agian</h2>
-       <script>
-         function toggle(){
-            let html =document.getElementsByTagName("html")
-            html[0].classList.toggle("theme-light")
-            html[0].classList.toggle("theme-dark")
+      <div class="menu"><i onclick="Menu()" class='bx bx-menu'></i>
+        <button class="dark-mode" onclick="toggle()"> <img src="moon-solid-24.png" alt=""></button>
+      </div>
+      <div id="info">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sida 2.html">Produkter</a></li>
+          <li><a href="sida 3.html">Formulär</a></li>
+          <li><a href="sida 4.html">Spel</a></li>
+        </ol>
+      </div>
+      <h2>make Sweden great agian</h2>
+      <script>
+        function toggle() {
+          let html = document.getElementsByTagName("html")
+          html[0].classList.toggle("theme-light")
+          html[0].classList.toggle("theme-dark")
         }
-       </script>
+      </script>
     </header>
-        <main>
-            <h2>Akta dig från sossarna</h2>
-            <div class="game">
-                <div id="spelare" ><img src="sdltb870032-nh-890x592.jpg" alt="" id="img-jimmy"></div>
-                <div id="magdalena"><img src="ladda ned.jpg" alt="" id="magda"></div>
-              </div>
-              <script>
-                var spelare = document.getElementById("spelare")
-                var magdalena = document.getElementById("magdalena")
-                let jumps = 0
-                function jump(){
-                    jumps++
-                  if(spelare.classList != "animate"){
-                    spelare.classList.add("animate");
-                  }
-                    setTimeout(function(){
-                      spelare.classList.remove("animate")
-                    },500);
-                    }
-            
-                    var checkDead = setInterval(function(){
-                      var spelaretop =
-                      parseInt(window.getComputedStyle(spelare).
-                    getPropertyValue("top"));
-                    var magdalenaleft =
-                      parseInt(window.getComputedStyle(magdalena).
-                    getPropertyValue("left"));
-                      if(magdalenaleft<20 && magdalenaleft>0 && spelaretop>=130){
-                        magdalena.style.animation = "none"
-                        magdalena.style.display = "none"
-                        alert("sossejävlarna vann" +" "+ "poäng:" + jumps)
-                        jumps = 0
-                      }
-                },10);
-                
-             </script>
-        </main>
-        <aside></aside>
-        <footer>
+    <main>
+      <h2>Akta dig från sossarna</h2>
+      <div class="game">
+        <div id="spelare"><img src="sdltb870032-nh-890x592.jpg" alt="" id="img-jimmy"></div>
+        <div id="magdalena"><img src="ladda ned.jpg" alt="" id="magda"></div>
+      </div>
+      <script>
+        var spelare = document.getElementById("spelare")
+        var magdalena = document.getElementById("magdalena")
+        let jumps = 0
+        function jump() {
+          jumps++
+          if (spelare.classList != "animate") {
+            spelare.classList.add("animate");
+          }
+          setTimeout(function () {
+            spelare.classList.remove("animate")
+          }, 500);
+        }
+
+        var checkDead = setInterval(function () {
+          var spelaretop =
+            parseInt(window.getComputedStyle(spelare).
+              getPropertyValue("top"));
+          var magdalenaleft =
+            parseInt(window.getComputedStyle(magdalena).
+              getPropertyValue("left"));
+          if (magdalenaleft < 20 && magdalenaleft > 0 && spelaretop >= 130) {
+            magdalena.style.animation = "none"
+            magdalena.style.display = "none"
+            alert("sossejävlarna vann" + " " + "poäng:" + jumps)
+            jumps = 0
+          }
+        }, 10);
+
+        function starta() {
+
+        }
+      </script>
+      <button onclick="starta()">Starta spel</button>
+    </main>
+    <aside></aside>
+    <footer>
 
 
-    <div id="myModal" class="modal">
+      <div id="myModal" class="modal">
 
-   
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <img src="tenor.gif" alt="">
-    </div>
 
-    </div>
-           <a id="flagga"><img src="R.gif" alt="" ></a> 
-            
-            <h4 id="kontakta">Kontakta oss</h4>
-            <p>Telefonnummer: 0760383578 <br>Gmail: Makeswedengreat@gmail.com Adress: Solvägen 3 </p>
-        </footer>
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img src="tenor.gif" alt="">
+        </div>
 
-    </div>
-    <script src="index.js"></script>
+      </div>
+      <a id="flagga"><img src="R.gif" alt=""></a>
+
+      <h4 id="kontakta">Kontakta oss</h4>
+      <p>Telefonnummer: 0760383578 <br>Gmail: Makeswedengreat@gmail.com Adress: Solvägen 3 </p>
+    </footer>
+
+  </div>
+  <script src="index.js"></script>
 </body>
+
 </html>
