@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="theme-light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,84 +8,79 @@
     <link rel="stylesheet" href="sida 3.css">
     <link rel="stylesheet" href="gemensam.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  
 </head>
+
 <body>
     <div class="grid-container">
-    <header>
 
-        <div class="menu" ><i onclick="Menu()" class='bx bx-menu'></i>
-            <button class="dark-mode" onclick="toggle()"> <img src="moon-solid-24.png" alt=""></button>
-        </div>
-        <div id="info">
-            <ol>
-                <li><a href="index.html">Hem</a></li>
-                <li><a href="sida 2.html">Produkter</a></li>
-                <li><a href="sida 3.html">Ansökan</a></li>
-                <li><a href="sida 4.html">Spel</a></li>
-            </ol>
-        </div>
-        <h2>Make Sweden great agian</h2>
-       <script>
-         function toggle(){
-            let html =document.getElementsByTagName("html")
-            html[0].classList.toggle("theme-light")
-            html[0].classList.toggle("theme-dark")
-        }
-       </script>
-    </header>
-    <main> 
-        <h1>Ansökan till SD</h1>
-
-        <div class="form">
-
-            <form action="https://formsubmit.co/playxxxg@gmail.com" method="POST">
-           
-                <div class="innerform">
-                <label for="firstname">Förnamn</label>
-                <br>
-                <input type="text" id="Firsname" name="Firstname"> <br><br>
-                <label for="Lastname">Efternamn</label>
-                <br>
-                <input type="text" name="Lasname" id="Lasname"><br><br>
-                <label for="email">E-post</label>
-                <br>
-                <div class="control has-icons-left has-icons-right">
-                    <input class="input is-danger" name="email" id="email" type="email">
-                    <span class="icon is-small is-left">
-                      <i class="fas fa-envelope"></i>
-                    </span>
-                    <span class="icon is-small is-right">
-                      <i class="fas fa-exclamation-triangle"></i>
-                    </span>
-                <h4>Skriv meddelande här</h4>
-                <textarea name="message" cols="50" rows="10" id="message"></textarea>
-                <input type="submit" id="button">
+        <header>
+            <div class="menu"><i onclick="Menu()" class='bx bx-menu'></i>
+                <button class="dark-mode" onclick="toggle()"> <img src="moon-solid-24.png" alt=""></button>
             </div>
-               
-            </form>
-        </div>
-    </main>
+            <div id="info">
+                <ol>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="sida 2.html">Produkter</a></li>
+                    <li><a href="sida 3.html">Ansökan</a></li>
+                    <li><a href="sida 4.html">Spel</a></li>
+                </ol>
+            </div>
+            <h2>Make Sweden great agian</h2>
+            <script>
+                function toggle() {
+                    let html = document.getElementsByTagName("html")
+                    html[0].classList.toggle("theme-light")
+                    html[0].classList.toggle("theme-dark")
+                }
+            </script>
+        </header>
+
+        <main>
+            <h1>Ansökan till SD</h1>
+            <div class="form">
+                <form action="https://formsubmit.co/playxxxg@gmail.com" method="POST">
+
+                    <div class="innerform">
+                        <label for="firstname">Förnamn</label>
+                        <br>
+                        <input type="text" id="Firsname" name="Firstname"> <br><br>
+                        <label for="Lastname">Efternamn</label>
+                        <br>
+                        <input type="text" name="Lasname" id="Lasname"><br><br>
+                        <label for="email">E-post</label>
+                        <br>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input is-danger" name="email" id="email" type="email">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            <span class="icon is-small is-right">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </span>
+                            <h4>Skriv meddelande här</h4>
+                            <textarea name="message" cols="50" rows="10" id="message"></textarea>
+                            <input type="submit" id="button">
+                        </div>
+                </form>
+            </div>
+        </main>
+
         <aside></aside>
+
         <footer>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="tenor.gif" alt="">
+                </div>
+            </div>
+            <a id="flagga"><img src="R.gif" alt=""></a>
 
-
-    <div id="myModal" class="modal">
-
-   
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <img src="tenor.gif" alt="">
-    </div>
-
-    </div>
-           <a id="flagga"><img src="R.gif" alt="" ></a> 
-            
             <h4 id="kontakta">Kontakta oss</h4>
             <p>Telefonnummer: 0760383578 <br>Gmail: Makeswedengreat@gmail.com Adress: Solvägen 3 </p>
         </footer>
-
     </div>
     <script src="index.js"></script>
 </body>
+
 </html>

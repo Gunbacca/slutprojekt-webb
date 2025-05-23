@@ -13,8 +13,8 @@
 
 <body>
   <div class="grid-container">
-    <header>
 
+    <header>
       <div class="menu"><i onclick="Menu()" class='bx bx-menu'></i>
         <button class="dark-mode" onclick="toggle()"> <img src="moon-solid-24.png" alt=""></button>
       </div>
@@ -35,6 +35,7 @@
         }
       </script>
     </header>
+
     <main>
       <h2>Akta dig från sossarna</h2>
       <div class="game">
@@ -69,36 +70,28 @@
             jumps = 0
           }
         }, 10);
-
         function starta() {
-
+          location.reload();
         }
       </script>
       <button onclick="starta()">Starta spel</button>
       <br>
-      
     </main>
+
     <aside></aside>
+
     <footer>
-
-
       <div id="myModal" class="modal">
-
-
         <div class="modal-content">
           <span class="close">&times;</span>
           <img src="tenor.gif" alt="">
         </div>
-
       </div>
       <a id="flagga"><img src="R.gif" alt=""></a>
-
       <h4 id="kontakta">Kontakta oss</h4>
       <p>Telefonnummer: 0760383578 <br>Gmail: Makeswedengreat@gmail.com Adress: Solvägen 3 </p>
     </footer>
 
-  </div>
-  <script src="index.js"></script>
+    <script src="index.js"></script>
 </body>
-
 </html>

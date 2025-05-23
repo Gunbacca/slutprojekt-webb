@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="theme-light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,74 +8,70 @@
     <link rel="stylesheet" href="sida 2.css">
     <link rel="stylesheet" href="gemensam.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  
+
 </head>
 <body>
     <div class="grid-container">
-    <header>
+        
+        <header>
+            <div class="menu"><i onclick="Menu()" class='bx bx-menu'></i>
+                <button class="dark-mode" onclick="toggle()"> <img src="moon-solid-24.png" alt=""></button>
+            </div>
+            <div id="info">
+                <ol>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="sida 2.html">Produkter</a></li>
+                    <li><a href="sida 3.html">Ansökan</a></li>
+                    <li><a href="sida 4.html">Spel</a></li>
+                </ol>
+            </div>
+            <h2>Make Sweden great agian</h2>
+            <script>
+                function toggle() {
+                    let html = document.getElementsByTagName("html")
+                    html[0].classList.toggle("theme-light")
+                    html[0].classList.toggle("theme-dark")
+                }
+            </script>
+        </header>
 
-        <div class="menu" ><i onclick="Menu()" class='bx bx-menu'></i>
-            <button class="dark-mode" onclick="toggle()"> <img src="moon-solid-24.png" alt=""></button>
-        </div>
-        <div id="info">
-            <ol>
-                <li><a href="index.html">Hem</a></li>
-                <li><a href="sida 2.html">Produkter</a></li>
-                <li><a href="sida 3.html">Ansökan</a></li>
-                <li><a href="sida 4.html">Spel</a></li>
-            </ol>
-        </div>
-        <h2>Make Sweden great agian</h2>
-       <script>
-         function toggle(){
-            let html =document.getElementsByTagName("html")
-            html[0].classList.toggle("theme-light")
-            html[0].classList.toggle("theme-dark")
-        }
-       </script>
-    </header>
-    <main class="Shop-container"> 
-        <div class="text"> 
-            <img src="Skärmklipp.PNG" alt="">
-            <h3>Make Sweden Great Again keps</h3>
-            <p>299:-kr</p>
-        </div>
-        <div class="text">
-            <img src="Skärmklipp2.PNG" alt="">
-            <h3 >Make Sweden Great Again T-shirt herr</h3>
-            <p>499:-kr</p>
-        </div>
-        <div class="text">
-            <img src="Make-Sweden-Great-Again-Mugg.jpg" alt="">
-            <h3>Make Sweden Great Again kaffe kopp</h3>
-            <p>150:-kr</p>
-        </div>
-        <div class="text">
-            <img src="cccb3dbc-dd0c-4130-bae7-b429c944a395.jpg" alt="">
-            <h3>Svenskt pass (tillfälligt)</h3>
-            <p>20000:-kr</p>
-        </div>
-    </main>
+        <main class="Shop-container">
+            <div class="text">
+                <img src="Skärmklipp.PNG" alt="">
+                <h3>Make Sweden Great Again keps</h3>
+                <p>299:-kr</p>
+            </div>
+            <div class="text">
+                <img src="Skärmklipp2.PNG" alt="">
+                <h3>Make Sweden Great Again T-shirt herr</h3>
+                <p>499:-kr</p>
+            </div>
+            <div class="text">
+                <img src="Make-Sweden-Great-Again-Mugg.jpg" alt="">
+                <h3>Make Sweden Great Again kaffe kopp</h3>
+                <p>150:-kr</p>
+            </div>
+            <div class="text">
+                <img src="cccb3dbc-dd0c-4130-bae7-b429c944a395.jpg" alt="">
+                <h3>Svenskt pass (tillfälligt)</h3>
+                <p>20000:-kr</p>
+            </div>
+        </main>
         <aside></aside>
         <footer>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="tenor.gif" alt="">
+                </div>
+            </div>
+            <a id="flagga"><img src="R.gif" alt=""></a>
 
-
-    <div id="myModal" class="modal">
-
-   
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <img src="tenor.gif" alt="">
-    </div>
-
-    </div>
-           <a id="flagga"><img src="R.gif" alt="" ></a> 
-            
             <h4 id="kontakta">Kontakta oss</h4>
             <p>Telefonnummer: 0760383578 <br>Gmail: Makeswedengreat@gmail.com Adress: Solvägen 3 </p>
         </footer>
 
-    </div>
+    
     <script src="index.js"></script>
 </body>
 </html>
